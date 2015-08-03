@@ -1,0 +1,95 @@
+* {
+	font-family: Verdana;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: lightblue;
+}
+
+header {
+	background-color: steelblue;
+	font-size: 40px;
+	margin-bottom: 30px;
+	color: white;
+	padding: 10px;
+}
+
+
+/*Home Template*/
+#homegifDrag {
+	float: left;
+	margin: 20px;
+}
+
+#homegifGrowl {
+	height: 200px;
+	width: 200px;
+	float: right;
+	margin: 20px;
+}
+
+.container {
+	width: 90%;
+	margin-left: 50px;
+}
+
+
+/*Poke Template*/
+.pokecard {
+	width: 280px;
+	display: inline-block;
+	padding: 20px;
+	margin: 10px 30px;
+	border: 10px solid red;
+	border-radius: 10%;
+	background-color: whitesmoke;
+}
+
+#cardHalfOne {
+	width: 130px;
+	display: inline-block;
+}
+
+#cardHalfTwo {
+	width: 120px;
+	display: inline-block;
+}
+
+.types {
+	height: 25px;
+	display: inline-block;
+	float: left;
+	margin-right: 10px;
+}
+
+.pokegif {
+	min-height: 95px;
+	display: block;
+	margin: 10px 0px;
+}
+
+.stats {
+	border: 1px solid black;
+	padding: 2px;
+	margin-top: 10px;
+}
+
+li {
+	font-size: 12px;
+	list-style-type: none;
+}
+
+.pokecard1 img { 
+        -moz-transform: scaleX(-1); /*this block flips images*/
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+}
+
+
+

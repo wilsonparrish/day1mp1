@@ -12,17 +12,39 @@
 
 </head>
 <body>
-	<header>
-		<button id="menu-speed" class="mdl-button mdl-js-button mdl-button--icon">
-			<i class="material-icons">more_vert</i>
-		</button>
-		<ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect" for="menu-speed">
-			<li class="mdl-menu__item">Assemble your Team</li>
-			<li class="mdl-menu__item">Medium</li>
-			<li class="mdl-menu__item">Slow</li>
-		</ul>
-		Pokemon Center
-	</header>
+	<div id="mainNav" class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+	  <header class="mdl-layout__header">
+	    <div class="mdl-layout__header-row">
+	      <!-- Title -->
+	      <span id="siteTitle" class="mdl-layout-title">Pokemon Center</span>
+	      <!-- Add spacer, to align navigation to the right -->
+	      <div class="mdl-layout-spacer"></div>
+	      <!-- Navigation. We hide it in small screens. -->
+	      <nav class="mdl-navigation mdl-layout--large-screen-only">
+	        <a class="mdl-navigation__link" href="">Learn</a>
+	        <a class="mdl-navigation__link" href="">Train</a>
+	        <a class="mdl-navigation__link" href="">Fight</a>
+	        <a class="mdl-navigation__link" href="">Login</a>
+	      </nav>
+	    </div>
+	  </header>
+	  <div class="mdl-layout__drawer">
+	    <span class="mdl-layout-title">Pokemon Center</span>
+	    <nav class="mdl-navigation">
+	      <a class="mdl-navigation__link" href="">Learn</a>
+	      <a class="mdl-navigation__link" href="">Train</a>
+	      <a class="mdl-navigation__link" href="">Fight</a>
+	      <a class="mdl-navigation__link" href="">Login</a>
+	    </nav>
+	  </div>
+	  <main class="mdl-layout__content">
+	    <div class="page-content"><!-- Your content goes here --></div>
+	  </main>
+	</div>
+	
+	<ng-view></ng-view>
+	<ng-view></ng-view>
+	<ng-view></ng-view>
 	<ng-view></ng-view>
 
 
@@ -33,6 +55,7 @@
 	<script src="app/app.js"></script>
 	<!-- controllers -->
 	<script src="controllers/controller.js"></script>
+	<script src="controllers/battleCtrl.js"></script>
 	<!-- services -->
 	<script src="services/service.js"></script>
 	<!-- directives -->

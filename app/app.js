@@ -7,8 +7,16 @@ app.config(function($routeProvider){
 			controller: 'pokeCtrl'
 		})
 		.when('/pokemonCenter', {
+			templateUrl: 'templates/pokePicker.html',
+			controller: 'pokeCtrl'
+		})
+		.when('/pokemonCenter/pokeTeam', {
 			templateUrl: 'templates/pokeTmpl.html',
 			controller: 'pokeCtrl'
+		})
+		.when('/battleArena', {						
+			templateUrl: 'templates/BattleTmpl.html',
+			controller: 'battleCtrl'
 		})
 		.otherwise({
 			redirectTo: '/'

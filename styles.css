@@ -9,14 +9,13 @@ html, body {
 	background-color: lightblue;
 }
 
-header {
-	background-color: steelblue;
-	font-size: 40px;
-	margin-bottom: 30px;
-	color: white;
-	padding: 10px;
+#siteTitle {
+	font-size: 35px;
 }
 
+header div {
+	background-color: red;
+}
 
 /*Home Template*/
 #homegifDrag {
@@ -42,9 +41,9 @@ header {
 	width: 280px;
 	display: inline-block;
 	padding: 20px;
-	margin: 10px 30px;
+	margin: 70px 30px;
 	border: 10px solid red;
-	border-radius: 10%;
+	border-radius: 8%;
 	background-color: whitesmoke;
 }
 
@@ -89,6 +88,12 @@ li {
         transform: scaleX(-1);
         filter: FlipH;
         -ms-filter: "FlipH";
+}
+
+/*Battle Template*/
+#battlefield {
+	margin-left: 70px;
+	max-height: 800px;
 }
 
 
